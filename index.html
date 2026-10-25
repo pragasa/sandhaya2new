@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sandhya Parajuli — a quiet, curious, and creative software engineer." />
+    <title>Simply Sandhya ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Sandhya Parajuli home">Simply Her <span>♡</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+          <a href="#about">About me</a>
+          <a href="#skills">My world</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#contact">Say hello <span>→</span></a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy reveal visible">
+            <p class="eyebrow">A little space, a little story, a little of me.</p>
+            <h1>Hi, I’m <em>Sandhya<br />Parajuli</em> <span>♡</span></h1>
+            <p class="hero-lede">A quiet but cheerful soul who loves creativity, learning, and finding joy in the little things.</p>
+            <a class="button button-primary" href="#about">Explore my world <span>→</span></a>
+          </div>
+          <div class="hero-portrait reveal visible">
+            <div class="portrait-ring"></div>
+            <img src="profile-photo.png" alt="Sandhya Parajuli smiling" />
+            <span class="portrait-doodle doodle-one">✦</span>
+            <span class="portrait-doodle doodle-two">♡</span>
+          </div>
+        </section>
+
+        <div class="signal-strip" aria-label="Sandhya's interests">
+          <span>CREATIVITY</span><i>♡</i><span>LEARNING</span><i>✦</i><span>KINDNESS</span><i>♡</i><span>CURIOUSITY</span>
+        </div>
+
+        <section id="about" class="content-section about-section">
+          <div class="section-label"><span>01</span><span class="label-rule"></span><span>About me</span></div>
+          <div class="about-grid">
+            <h2>Simply me,<br /><em>simply Sandhya.</em></h2>
+            <div class="about-copy">
+              <p class="lead">I’m someone who finds beauty in thoughtful details and meaning in the things I create.</p>
+              <p>As a future software engineer, I enjoy turning ideas into simple, useful experiences. Outside the screen, I’m always learning, staying curious, and making space for the small moments that make life feel special.</p>
+              <p>This is my little corner of the internet — a place to share what I’m building, what I’m learning, and the person behind the work.</p>
+            </div>
+          </div>
+          <div class="values">
+            <article><span>01</span><strong>Stay curious</strong><p>There is always something new to discover.</p></article>
+            <article><span>02</span><strong>Make it meaningful</strong><p>Good work should feel useful and human.</p></article>
+            <article><span>03</span><strong>Enjoy the little things</strong><p>Small details often make the biggest difference.</p></article>
+          </div>
+        </section>
+
+        <section id="skills" class="content-section world-section">
+          <div class="section-label"><span>02</span><span class="label-rule"></span><span>My world</span></div>
+          <div class="world-grid">
+            <h2>Things I love<br /><em>to explore.</em></h2>
+            <div class="interest-list">
+              <div><span>01 — Create</span><p>Web design · Photography · Writing · New ideas</p></div>
+              <div><span>02 — Learn</span><p>Technology · Design · People · Everyday stories</p></div>
+              <div><span>03 — Build</span><p>HTML · CSS · JavaScript · Thoughtful digital experiences</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+          <div class="contact-panel">
+            <div class="contact-intro">
+              <div class="section-label"><span>03</span><span class="label-rule"></span><span>Say hello</span></div>
+              <h2>Let’s make something<br /><em>lovely together.</em></h2>
+              <p>Have an idea, a kind message, or a good story to share? I’d love to hear from you.</p>
+              <div class="contact-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div>
+            </div>
+            <form id="contact-form" class="contact-form">
+              <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="How should I call you?" required />
+              <label for="project">Your message</label><textarea id="project" name="project" rows="4" placeholder="Tell me something nice..." required></textarea>
+              <button class="button button-light" type="submit">Send a hello <span>→</span></button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+          <footer class="site-footer"><span>© 2024 Sandhya Parajuli</span><span>Made with ♡</span><a href="#top">Back to top ↑</a></footer>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
